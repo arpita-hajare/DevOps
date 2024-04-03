@@ -1,0 +1,17 @@
+name: Commit Action Demo
+on:
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - main
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: Checkout repository
+         uses: actions/checkout@v2
+
+       -  name: Print message
+          run: echo "my second workflow"
