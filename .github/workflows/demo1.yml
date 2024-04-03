@@ -6,5 +6,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print greetings
-      - run: echo "my tests"
+       - name: Checkout repository
+         uses: actions/checkout@v2
+
+       -  name: Print message
+          run: echo "my first workflow"
+         
+     
