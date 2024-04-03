@@ -1,0 +1,13 @@
+name: Commit Action Demo
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print greetings
+      - run: echo "my tests"
